@@ -36,7 +36,7 @@
                       let liText = li[k].innerText;
                       let parts = liText.split('\n')
                       let restructuredString = parts[0];
-                      liArray.push([h2Text,h3,h4[g].innerText,restructuredString]);
+                      liArray.push([h2Text,h3,restructuredString,h4[g].innerText]);
                   } liUl.push([liArray]);    
               }
           //}
@@ -46,7 +46,7 @@
   }console.log('esto es LiArray: ',liArray);
   
   
-  let csvContent = "";
+  let csvContent = "\uFEFF";
   liArray.forEach(function(rowArray) {
       let row = rowArray.join("°");
       csvContent += row + "\r\n";
