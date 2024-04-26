@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "QA - Specs // fusión",
+    "version": "3.0",
+    "description": "/ fusion",
+    "action": {
+        "default_title": "fusion",
+         "default_icon": "icon.png"
+      },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+      ],
+    "background": {
+        "service_worker": "background.js"
+    }}
